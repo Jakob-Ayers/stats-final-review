@@ -4,6 +4,12 @@ window.addEventListener('load', (event) => {
 
 function placeAnswers(answerList) {
     for (i = 0; i < answerList.length; i++) {
-        document.getElementById("answers").innerHTML += `<li>${answerList[i]}</li>`
+        if (answerList[i] == ' ') {
+            answerText = `<li>Question crossed out</li>`
+        } else {
+            answerText = `<li>${answerList[i]}</li>`
+        }
+
+        document.getElementById("answers").innerHTML += answerText
     }
 }
