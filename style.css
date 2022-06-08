@@ -15,6 +15,16 @@ nav {
   text-align: center;
 }
 
+.question {
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid black;
+}
+
+.question img {
+  border: 1px solid black;
+}
+
 footer {
   text-align: center;
 }
